@@ -44,15 +44,16 @@ var swiper = new Swiper(".popular ", {
   // ---------------------------video--------------------------------------
 
   let videoContainer = document.querySelector('.video-container');
-  let myVideo = document.querySelector('#myVideo')
+  let myVideo = document.querySelector('#myVideo');
   document.querySelector('.play-icon').onclick =() =>{
-      videoContainer.classList.add("show-video")
-      myVideo.play() 
+      videoContainer.classList.add("show-video");
+      myVideo.play();
   }
 
   // close video
 
   document.querySelector('.close-btn').onclick =()=>{
-    videoContainer.classList.remove('show-video')
+    videoContainer.classList.remove('show-video');
+        myVideo.pause();
   }
 
